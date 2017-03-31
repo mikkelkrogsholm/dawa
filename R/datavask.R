@@ -22,13 +22,20 @@
 #' @examples
 #' \dontrun{
 #' # Vask adressen "Rante mester vej 8, 4, 2400 København NV"
-#' dawa::datavask(betegnelse = "Rante mester vej 8, 4, 2400 København NV")
+#' dawa::datavask(betegnelse = "Rante mester vej 8, 4, 2400 København NV", type = "adresser")
 #'
 #' # Vask adressen "Borger gade 4, STTV, 6000 Kolding"
-#' dawa::datavask(betegnelse = "Borger gade 4, STTV, 6000 Kolding")
+#' dawa::datavask(betegnelse = "Borger gade 4, STTV, 6000 Kolding", type = "adgangsadresser")
 #' }
 
-datavask <- function(betegnelse = NULL){
+datavask <- function(betegnelse = NULL, type = NULL){
+
+  # Tjekker at type er udfyldt
+  if(is.null(type)) stop("Du skal vælge type: adresser eller adgangsadresser")
+
+  # Sætter url til kald afhængig af type
+  if(type == "adresser")  url <- "https://dawa.aws.dk/datavask/adresser"
+  if(type == "adgangsadresser")  url <- "https://dawa.aws.dk/datavask/adgangsadresser"
 
   # Tjekker at betegnelse er udfyldt
   if(is.null(betegnelse)) stop("Betegnelse skal være udfyldt. Se evt eksempler.")
@@ -37,7 +44,7 @@ datavask <- function(betegnelse = NULL){
 
   # Henter data fra DAWA
   get_data <- httr::GET(
-    url = "https://dawa.aws.dk/datavask/adresser",
+    url = url,
     query = params
   )
 
