@@ -25,4 +25,4 @@ License: Open Source
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
-Depends: httr
+Imports: httr

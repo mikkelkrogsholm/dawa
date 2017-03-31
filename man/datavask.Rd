@@ -2,10 +2,9 @@
 % Please edit documentation in R/datavask.R
 \name{datavask}
 \alias{datavask}
-\title{Datavask
-Datavask af adresse. Servicen modtager en adressebetegnelse og svarer med 1 eller flere adresser, som bedst matcher svaret. Endvidere er der en angivelse af hvor godt de fundne adresser matcher adressebetegnelsen.}
+\title{Datavask}
 \usage{
-datavask(betegnelse = NULL)
+datavask(betegnelse = NULL, type = NULL)
 }
 \arguments{
 \item{betegnelse}{Adressebetegnelsen for den adresse som ønskes vasket, f.eks. "Augustenborggade 5, 5. 3, 8000 Aarhus C". Adressebetegnelsen kan leveres med eller uden supplerende bynavn.}
@@ -25,15 +24,14 @@ item          \tab Den ukendte token
 }
 }
 \description{
-Datavask
 Datavask af adresse. Servicen modtager en adressebetegnelse og svarer med 1 eller flere adresser, som bedst matcher svaret. Endvidere er der en angivelse af hvor godt de fundne adresser matcher adressebetegnelsen.
 }
 \examples{
 \dontrun{
 # Vask adressen "Rante mester vej 8, 4, 2400 København NV"
-dawa::datavask(betegnelse = "Rante mester vej 8, 4, 2400 København NV")
+dawa::datavask(betegnelse = "Rante mester vej 8, 4, 2400 København NV", type = "adresser")
 
 # Vask adressen "Borger gade 4, STTV, 6000 Kolding"
-dawa::datavask(betegnelse = "Borger gade 4, STTV, 6000 Kolding")
+dawa::datavask(betegnelse = "Borger gade 4, STTV, 6000 Kolding", type = "adgangsadresser")
 }
 }
