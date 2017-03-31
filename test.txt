@@ -1,0 +1,12 @@
+\tabular{ll}{
+  kategori      \tab Angiver, hvor godt de(n) returnerede adresse(r) matcher adressebetegnelsen. "A" angiver, at den returnerede adresse matcher præcist, bortset fra forskelle på store og små bogstaver samt punktuering. "B" angiver et sikkert match, hvor der dog er mindre variationer (stavefejl eller lignende). C angiver et usikkert match,  hvor der er en stor sansynlighed for at den fundne adresse ikke er korrekt. For kategori A og B gælder, at der kun returneres én adresse. For kategori C kan der returneres flere adresser.\cr
+  resultater    \tab En liste af de adresser, som bedst matcher adressebetegnelsen, samt information om hvordan hver enkelt adresse matcher. Listen er ordnet efter hvor godt de matcher adressebetegnelsen med den bedst matchende adresse først. \cr
+  adresse       \tab Den (muligvis historiske) adresse, som matchede adressebetegnelsen \cr
+  aktueladresse \tab Den aktuelle version af den adresse, som matchede adressebetegnelsen. Bemærk, at adressen kan være nedlagt (statuskode 2 eller 4). \cr
+  vaskeresultat \tab Information om hvordan adressebetegnelsen matchede den fundne adresse \cr
+  afstand       \tab Levenshtein afstanden mellem adressebetegnelsen og den fundne adresses adressebetegnelse \cr
+  parsetadresse \tab En angivelse af, hvordan adressebetegnelsen blev parset til en struktureret adresse \cr
+  forskelle     \tab Levenshtein afstand mellem hvert felt i den parsede adresse og den fundne adresse \cr
+  ukendtetokens \tab En liste over de tokens i adressebetegnelsen, som ikke kunne knyttes til en del af den fundne adresse \cr
+  item          \tab Den ukendte token
+}
