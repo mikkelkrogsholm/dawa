@@ -20,12 +20,12 @@
 #' @export
 #'
 #' @examples
-#' #' \dontrun{
+#' \dontrun{
 #' # Vask adressen "Rante mester vej 8, 4, 2400 København NV"
-#' datavask(betegnelse = "Rante mester vej 8, 4, 2400 København NV")
+#' dawa::datavask(betegnelse = "Rante mester vej 8, 4, 2400 København NV")
 #'
 #' # Vask adressen "Borger gade 4, STTV, 6000 Kolding"
-#' datavask(betegnelse = "Borger gade 4, STTV, 6000 Kolding")
+#' dawa::datavask(betegnelse = "Borger gade 4, STTV, 6000 Kolding")
 #' }
 
 datavask <- function(betegnelse = NULL){
