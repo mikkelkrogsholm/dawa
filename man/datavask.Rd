@@ -8,6 +8,8 @@ datavask(betegnelse = NULL, type = NULL)
 }
 \arguments{
 \item{betegnelse}{Adressebetegnelsen for den adresse som ønskes vasket, f.eks. "Augustenborggade 5, 5. 3, 8000 Aarhus C". Adressebetegnelsen kan leveres med eller uden supplerende bynavn.}
+
+\item{type}{Vælg om det skal være "adgangsadresser" eller "adresser".}
 }
 \value{
 \tabular{ll}{

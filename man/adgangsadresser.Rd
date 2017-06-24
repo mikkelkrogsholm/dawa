@@ -7,6 +7,8 @@
 adgangsadresser(...)
 }
 \arguments{
+\item{...}{En af de nedenstående parametre.}
+
 \item{q}{Søgetekst. Der søges i vejnavn, husnr, supplerende bynavn, postnr og postnummerets navn. Alle ord i søgeteksten skal matche adgangsadressen. Wildcard * er tilladt i slutningen af hvert ord. Der skelnes ikke mellem store og små bogstaver.}
 
 \item{fuzzy}{Aktiver fuzzy søgning}

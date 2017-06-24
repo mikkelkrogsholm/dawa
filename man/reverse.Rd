@@ -8,6 +8,8 @@ Find den adgangsadresse, som ligger nærmest det angivne koordinat. Som koordina
 reverse(...)
 }
 \arguments{
+\item{...}{En af de nedenstående parametre.}
+
 \item{x}{X koordinat. (Hvis ETRS89/UTM32 anvendes angives øst-værdien.) Hvis WGS84/geografisk anvendex angives bredde-værdien.}
 
 \item{y}{Y koordinat. (Hvis ETRS89/UTM32 anvendes angives nord-værdien.) Hvis WGS84/geografisk anvendex angives længde-værdien.}

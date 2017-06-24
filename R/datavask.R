@@ -3,6 +3,7 @@
 #' Datavask af adresse. Servicen modtager en adressebetegnelse og svarer med 1 eller flere adresser, som bedst matcher svaret. Endvidere er der en angivelse af hvor godt de fundne adresser matcher adressebetegnelsen.
 #'
 #' @param betegnelse Adressebetegnelsen for den adresse som ønskes vasket, f.eks. "Augustenborggade 5, 5. 3, 8000 Aarhus C". Adressebetegnelsen kan leveres med eller uden supplerende bynavn.
+#' @param type Vælg om det skal være "adgangsadresser" eller "adresser".
 #'
 #' @return
 #' \tabular{ll}{

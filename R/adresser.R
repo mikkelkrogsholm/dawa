@@ -2,6 +2,7 @@
 #'
 #' Søg efter adresser. Returnerer de adresser som opfylder kriteriet. Med mindre der er behov for felter som kun er med i den fulde adressestruktur anbefaler vi at, man tilføjer parameteren struktur=mini, da dette vil resultere i bedre performance.
 #'
+#' @param ... En af de nedenstående parametre.
 #' @param q Søgetekst. Der søges i vejnavn, husnr, etage, dør, supplerende bynavn, postnr og postnummerets navn. Alle ord i søgeteksten skal matche adressebetegnelsen. Wildcard * er tilladt i slutningen af hvert ord. Der skelnes ikke mellem store og små bogstaver.
 #' @param fuzzy Aktiver fuzzy søgning
 #' @param id Adressens unikke id, f.eks. 0a3f5095-45ec-32b8-e044-0003ba298018. (Flerværdisøgning mulig).

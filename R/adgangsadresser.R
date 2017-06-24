@@ -3,6 +3,7 @@
 #'
 #' Søg efter adgangsadresser. Returnerer de adgangsadresser. som opfylder kriteriet. Med mindre der er behov for felter som kun er med i den fulde adressestruktur anbefaler vi at, man tilføjer parameteren struktur=mini, da dette vil resultere i bedre performance.
 #'
+#' @param ... En af de nedenstående parametre.
 #' @param q Søgetekst. Der søges i vejnavn, husnr, supplerende bynavn, postnr og postnummerets navn. Alle ord i søgeteksten skal matche adgangsadressen. Wildcard * er tilladt i slutningen af hvert ord. Der skelnes ikke mellem store og små bogstaver.
 #' @param fuzzy Aktiver fuzzy søgning
 #' @param kvh KVH-nøgle. 12 tegn bestående af 4 cifre der repræsenterer kommunekode, 4 cifre der repræsenterer vejkode efterfulgt af 4 tegn der repræsenter husnr. Se databeskrivelse.

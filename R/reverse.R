@@ -1,6 +1,7 @@
 #' Reverse geokodning
 #' Find den adgangsadresse, som ligger nærmest det angivne koordinat. Som koordinatsystem kan anvendes ETRS89/UTM32 med srid=25832 eller WGS84/geografisk med srid=4326. Default er WGS84.
 #'
+#' @param ... En af de nedenstående parametre.
 #' @param x X koordinat. (Hvis ETRS89/UTM32 anvendes angives øst-værdien.) Hvis WGS84/geografisk anvendex angives bredde-værdien.
 #' @param y Y koordinat. (Hvis ETRS89/UTM32 anvendes angives nord-værdien.) Hvis WGS84/geografisk anvendex angives længde-værdien.
 #' @param srid Angiver SRID for det koordinatsystem, som geospatiale parametre er angivet i. Default er 4326 (WGS84).
